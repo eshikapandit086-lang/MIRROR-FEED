@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Newsreader', 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF7F2;
+    color: #2D2522;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Subtle paper texture overlay & editorial elements */
+.paper-grain {
+  background-image: radial-gradient(#d6ccc2 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
+.subtle-shadow {
+  box-shadow: 0 4px 20px -2px rgba(45, 37, 34, 0.05), 0 2px 6px -1px rgba(45, 37, 34, 0.03);
+}
+
+.card-elevation {
+  box-shadow: 0 10px 30px -4px rgba(45, 37, 34, 0.06), 0 4px 10px -2px rgba(45, 37, 34, 0.02);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9CFC4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4B6A6;
+}

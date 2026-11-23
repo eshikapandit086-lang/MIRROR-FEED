@@ -1,0 +1,6 @@
+{
+  "name": "Mirror Feed",
+  "description": "A media literacy tool exploring how social media feeds shape self-perception and personal identity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
